@@ -8,7 +8,7 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 - 1x l2c LCD
 - 1x rdeča, rumena in zelena LED
 - 3x 300n upor
-# Slika vezave v easyEDA
+# Vezalna shema
 <img width="707" height="528" alt="image" src="https://github.com/user-attachments/assets/40445dd5-b03b-4539-83db-462a4d26c054" />
 
 # Posnetek delovanja
@@ -33,10 +33,7 @@ Merilec vlage in toplote vporablja DHT22 kot primarni merilec veličin. Izmerjen
 N/A
 
 # Analiza
-N/A
-
-# Vpliv okolja
-N/A
+Naprava ima zelo široko merilno območje, ki sega od -10°C do 80°C. Pri katerih se meja napake tudi povečuje sorazmirno pri pre nizkih in pre visokih temperaturah. S tem lahko vidimo omejitve DHT22 senzorja.
 
 # Zaključek
 N/A
