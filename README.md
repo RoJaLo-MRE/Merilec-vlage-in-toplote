@@ -16,16 +16,7 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 <img width="658" height="462" alt="image" src="https://github.com/user-attachments/assets/c23d79c1-8df6-4628-be71-2b393e8e033f" />
 
 # Posnetek delovanja
-<object width="425" height="350">
-  <param name="movie" value="https://youtube.com/shorts/KarrxKDYo-4?feature=share" />
-  <param name="wmode" value="transparent" />
-  <embed src="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
-
-
-https://youtube.com/shorts/KarrxKDYo-4?feature=share
+https://www.youtube.com/shorts/tefM5QXTqVw
 
 # Končne slike izdelka
 N/A
