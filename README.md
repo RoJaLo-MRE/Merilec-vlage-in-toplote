@@ -19,7 +19,8 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 [MicrosoftTeams-video.mp4](https://github.com/user-attachments/assets/ac27e850-0cbb-4920-885f-2d4a0ac49804)
 
 # Končne slike izdelka
-N/A
+<img width="745" height="530" alt="image" src="https://github.com/user-attachments/assets/c57a8d74-4a75-4216-ae0b-e5d934ddb0b3" />
+
 
 # Komentar na delovanje
 Merilec vlage in toplote vporablja DHT22 kot primarni merilec veličin. Izmerjene veličine zo izračunane in procesirane v arduino UNO in prikazane na LCD-ju. LED diode so vezane preko treh arduino pin-ov, ki so sprogramirani da čez njih spustijo napetost v odvistnosti od % izmerjene vlage.
