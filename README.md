@@ -13,6 +13,7 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 
 # Shema Ohisja
 IMG_2900.png
+IMG_2901.png
 
 # Posnetek delovanja
 N/A
