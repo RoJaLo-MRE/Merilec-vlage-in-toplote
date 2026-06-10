@@ -20,6 +20,7 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 
 # Končne slike izdelka
 <img width="745" height="530" alt="image" src="https://github.com/user-attachments/assets/c57a8d74-4a75-4216-ae0b-e5d934ddb0b3" />
+<img width="404" height="639" alt="image" src="https://github.com/user-attachments/assets/3c273c93-67ad-4a6f-bdf8-b465a52829ac" />
 
 
 # Komentar na delovanje
