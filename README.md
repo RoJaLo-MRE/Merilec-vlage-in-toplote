@@ -16,7 +16,7 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 <img width="658" height="462" alt="image" src="https://github.com/user-attachments/assets/c23d79c1-8df6-4628-be71-2b393e8e033f" />
 
 # Posnetek delovanja
-N/A
+(https://github.com/RoJaLo-MRE/Merilec-vlage-in-toplote/raw/refs/heads/main/MicrosoftTeams-video.mp4)
 
 # Končne slike izdelka
 N/A
