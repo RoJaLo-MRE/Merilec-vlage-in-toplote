@@ -3,11 +3,12 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 
 # Komponente
 - 1x Arduino UNO
--  Jumper žičke
+- žičke
+- skrčki
 - 1x DHT22
 - 1x l2c LCD
 - 1x rdeča, rumena in zelena LED
-- 3x 300n upor
+- 3x 390n upor
 # Vezalna shema
 <img width="707" height="528" alt="image" src="https://github.com/user-attachments/assets/40445dd5-b03b-4539-83db-462a4d26c054" />
 
@@ -21,6 +22,7 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 # Končne slike izdelka
 <img width="745" height="530" alt="image" src="https://github.com/user-attachments/assets/c57a8d74-4a75-4216-ae0b-e5d934ddb0b3" />
 <img width="404" height="639" alt="image" src="https://github.com/user-attachments/assets/3c273c93-67ad-4a6f-bdf8-b465a52829ac" />
+<img width="499" height="632" alt="image" src="https://github.com/user-attachments/assets/f20b4c5a-6d1d-4a66-81f1-fcebc171b129" />
 
 
 # Komentar na delovanje
@@ -43,7 +45,6 @@ Merilec vlage in toplote vporablja DHT22 kot primarni merilec veličin. Izmerjen
 Naprava ima zelo široko merilno območje, ki sega od -10°C do 80°C. Pri katerih se meja napake tudi povečuje sorazmirno pri pre nizkih in pre visokih temperaturah. S tem lahko vidimo omejitve DHT22 senzorja.
 
 # Zaključek
-
 
 # Možne izboljšave
 - Pametna uporaba naprave preko drugih naprav (mobilni telefon, PC, itd...)
