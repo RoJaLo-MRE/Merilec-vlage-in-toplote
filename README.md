@@ -11,6 +11,9 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 # Vezalna shema
 <img width="707" height="528" alt="image" src="https://github.com/user-attachments/assets/40445dd5-b03b-4539-83db-462a4d26c054" />
 
+# Shema Ohisja
+IMG_2900.png
+
 # Posnetek delovanja
 N/A
 
