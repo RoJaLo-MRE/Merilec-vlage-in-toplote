@@ -1,0 +1,97 @@
+#include <Wire.h> // doda wire kniznico
+#include <LiquidCrystal_I2C.h> // doda LCD kniznico
+#include <DHT.h> // doda dht senzor kniznico
+ 
+// DHT nastavitve
+#define DHTPIN 6 // nastavi dht na pin 6
+#define DHTTYPE DHT22 // prepozna tip dhtja kot 22
+ 
+// LED pini
+#define LED_ZELENA 7 // da modro na pin 7
+#define LED_RDECA 9 // da rdeco na pin 8
+#define LED_RUMENA 8 // da rdeco na pin 8
+ 
+DHT dht(DHTPIN, DHTTYPE); // prepozna dht ki je ze definiran
+LiquidCrystal_I2C lcd(0x27, 16, 2); // definira da ima lcd 16 stolpceu in 2 vrstici
+ 
+bool stanjeLED = false; // za utripanje
+ 
+void setup() {
+  lcd.init(); // inicializira/uzge LCD
+  lcd.backlight(); // uzge blacklight svetlobo na LCD
+  dht.begin(); // zacne dht
+ 
+  pinMode(LED_ZELENA, OUTPUT); // da zeleno led na output
+  pinMode(LED_RDECA, OUTPUT); // da rdeco led na output
+  pinMode(LED_RUMENA, OUTPUT); // rumena na output ← POPRAVLJENO
+ 
+  lcd.print("Zagon sistema"); // ob vklopu napise zagon sistema
+  delay(2000);
+  lcd.clear(); // zbrise zagon
+}
+ 
+void loop() {
+  float vlaga = dht.readHumidity();
+  float temp = dht.readTemperature();
+ 
+  if (isnan(vlaga) || isnan(temp)) {
+    lcd.clear();
+    lcd.print("Napaka senzor!"); // ce ne zazna velicine napise napaka
+ 
+    digitalWrite(LED_ZELENA, LOW);
+    digitalWrite(LED_RDECA, LOW); // uganse ali sploh ne prizge ledic
+ 
+    delay(2000);
+    return; // po delayu resetira
+  }
+ 
+  lcd.clear(); // sprazne lcd
+ 
+  // prikaz
+  lcd.setCursor(0, 0);
+  lcd.print("Temp: ");
+  lcd.print(temp);
+  lcd.print(" C");
+ 
+  lcd.setCursor(0, 1);
+  lcd.print("Vlaga: ");
+  lcd.print(vlaga);
+  lcd.print(" %");
+ 
+  // spremeni stanje za utripanje
+  stanjeLED = !stanjeLED;
+ 
+  // LED LOGIKA
+  if (vlaga >= 0 && vlaga < 55) {
+    // idealno
+    digitalWrite(LED_ZELENA, HIGH);
+    digitalWrite(LED_RDECA, LOW);
+    digitalWrite(LED_RUMENA, LOW); // nastavi da ce je vlaga manjsa ali enaka 30 ali pod 60 gori zelena in ne gori rdeca
+  }
+  else if (vlaga >= 55 && vlaga < 60) { // ← POPRAVLJENO premaknjeno pred 60-65 blok
+    // rumena stalno sveti
+    digitalWrite(LED_ZELENA, LOW);
+    digitalWrite(LED_RDECA, LOW);
+    digitalWrite(LED_RUMENA, HIGH); // ce je vlaga enaka ali vec od 60 gori rdeca
+  }
+  else if (vlaga >= 60 && vlaga <= 65) {
+    // rdeca stalno sveti
+    digitalWrite(LED_ZELENA, LOW);
+    digitalWrite(LED_RUMENA, LOW);
+    digitalWrite(LED_RDECA, HIGH); // ce je vlaga enaka ali vec od 60 gori rdeca
+  }
+  else if (vlaga > 65) {
+    // rdeca utripa
+    digitalWrite(LED_RUMENA, LOW);
+    digitalWrite(LED_ZELENA, LOW);
+    digitalWrite(LED_RDECA, stanjeLED); // ce je vlaga nad 65 rdeca zacne utripat
+  }
+  else {
+    // prenizka vlaga
+    digitalWrite(LED_ZELENA, LOW);
+    digitalWrite(LED_RDECA, LOW);
+    digitalWrite(LED_RUMENA, LOW);
+  }
+ 
+  delay(500); // hitrost utripanj
+}
