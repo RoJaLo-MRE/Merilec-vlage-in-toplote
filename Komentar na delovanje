@@ -1,0 +1,2 @@
+Merilec vlage in toplote vporablja DHT22 kot primarni merilec veličin. Izmerjene veličine zo izračunane in procesirane v arduino UNO in prikazane na LCD-ju. LED diode so vezane preko treh arduino pin-ov, ki so sprogramirani 
+da čez njih spustijo napetost v odvistnosti od % izmerjene vlage.
