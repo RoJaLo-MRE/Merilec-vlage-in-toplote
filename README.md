@@ -12,8 +12,7 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 <img width="707" height="528" alt="image" src="https://github.com/user-attachments/assets/40445dd5-b03b-4539-83db-462a4d26c054" />
 
 # Shema Ohisja
-IMG_2900.png
-IMG_2901.png
+<img width="711" height="459" alt="image" src="https://github.com/user-attachments/assets/8ea97ca5-6ad2-40f0-952d-aad07ab06ab8" />
 
 # Posnetek delovanja
 N/A
