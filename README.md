@@ -9,6 +9,8 @@ Ta projekt implementira merilno napravo za temperaturo in vlago z uporabo senzor
 - 1x l2c LCD
 - 1x rdeča, rumena in zelena LED
 - 3x 390n upor
+
+# Kosovnica
   <img width="856" height="312" alt="image" src="https://github.com/user-attachments/assets/a594ca0f-b7f8-4205-9499-c074eef8f30a" />
 
 # Vezalna shema
