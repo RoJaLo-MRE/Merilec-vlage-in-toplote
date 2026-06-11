@@ -41,9 +41,15 @@ Merilec vlage in toplote vporablja DHT22 kot primarni merilec veličin. Izmerjen
 <img width="429" height="570" alt="image" src="https://github.com/user-attachments/assets/7db94f96-e5e3-4161-a7d0-84b686e64345" />
 <img width="451" height="611" alt="image" src="https://github.com/user-attachments/assets/fe7d428e-3657-4d38-bee3-32ace5c74f14" />
 
-
 # Analiza
 Naprava ima zelo široko merilno območje, ki sega od -40°C do 80°C. Pri katerih se meja napake tudi povečuje sorazmirno pri pre nizkih in pre visokih temperaturah. S tem lahko vidimo omejitve DHT22 senzorja.
+
+# Zaključek
+Projekt je bil vspešno dokončan. Naučili smo se kako opravljati z DHT22 senzorjem, njegove meje in omejitve. Največje težave nam je povzročal DHT22, saj je zelo občutljiva komponenta.
+Vse druge ovire so prišle primarno, iz pisanja kode, načrtovanja ohišja in tudi GitHuba. Pri delu je vsak član skupine opravil svoje spoštljivo delo. Bilo je veliko medsebojne pomoči in zunanjih dejavnikov, ki so vpljivali na kvaliteto končnega izdelka.
+
+# YouTube video
+https://youtu.be/rW0OmzGPKPY
 
 # Možne izboljšave
 - Pametna uporaba naprave preko drugih naprav (mobilni telefon, PC, itd...)
